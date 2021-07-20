@@ -46,5 +46,5 @@ The programe that calculates string expressions, supports brackets and handles e
 
 #### **2.4** The program is checked by a special tool-linter (PVS-Studio), which helps to detect a large number of logical errors and inaccuracies. Most of the identified errors and instabilities (potential errors) have been eliminated, primarily at the High and Medium levels.
 
-3. Functionality of the calculation module
+3.Functionality of the calculation module
 ------------------------------------------
