@@ -6,7 +6,7 @@ Description
 The programe that calculates string expressions, supports brackets and handles errors
 
 
-Technical description
+1. Technical description
 ---------------------
 
 #### Programming language: ANSI C, 1989 standard, plus Microsoft additions;
