@@ -9,7 +9,7 @@ The programe that calculates string expressions, supports brackets and handles e
 Technical description
 ---------------------
 
-### Programming language: ANSI C, 1989 standard, plus Microsoft additions;
-### Algorithm: Conversion to inverse Polish notation with its calculation;
+#### Programming language: ANSI C, 1989 standard, plus Microsoft additions;
+#### Algorithm: Conversion to inverse Polish notation with its calculation;
 
 
