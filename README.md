@@ -57,6 +57,18 @@ The programe that calculates string expressions, supports brackets and handles e
 
 #### 3.3 Basic arithmetic operations are supported:
 
-##### 3.3.1
-##### 3.3.2
+##### 3.3.1 Unary minus (−a). It does not require parentheses for the correct calculation of several cons in a row, because the order of calculations is determined unambiguously: 1+---2 = -1.
+##### 3.3.2 Parentheses for grouping (overriding priority). Parentheses are not mandatory in the case when the order of application of operations is obvious and unambiguously defined.
 ##### 3.3.3 Binary addition (a+b), subtraction (a−b), multiplication (a\*b), division (a/b) and exponentiation (a^b), which has associativity on the right. From the point of view of priority, there is not immediately obvious behavior of the degree with respect to the unary minus: -2^2 = -4.
+
+#### 3.4 In addition to operations, formulas can contain function calls of the form " sin(5)" (a kind of unary operation). Brackets may or may not be present. The following functions are supported:
+
+##### 3.4.1 Square root (sqrt).
+##### 3.4.2 Trigonometric (sin, cos, tg, ctg, arcsin, arccos, arctg).
+##### 3.4.3 Natural logarithm (ln).
+##### 3.4.4 Rounding down (floor) and up (ceil).
+##### 3.4.5 The logarithm function on an arbitrary basis “log(a, x) " from two arguments.
+
+#### 3.5 Storing intermediate results in temporary variables and using them as operands. This implies sequential evaluation of several expressions, separated by a semicolon, with the return of the value of the last one. An example of such an expression: "x = 2 \* 2; y = 1 + 2; x^y + x", its value is 68. The values of temporary variables are not stored and cannot be used in the following expressions.
+
+#### 3.6 Calculations are carried out with an accuracy of the double type. Formulas can contain any whitespace characters (not just spaces!) that do not interfere with calculations (a free form of writing an expression), that is, they do not break tokens into parts.
