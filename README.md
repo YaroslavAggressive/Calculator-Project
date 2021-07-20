@@ -59,7 +59,7 @@ The programe that calculates string expressions, supports brackets and handles e
 
 ##### 3.3.1 Unary minus (−a). It does not require parentheses for the correct calculation of several cons in a row, because the order of calculations is determined unambiguously: 1+---2 = -1.
 ##### 3.3.2 Parentheses for grouping (overriding priority). Parentheses are not mandatory in the case when the order of application of operations is obvious and unambiguously defined.
-##### 3.3.3 Binary addition (a+b), subtraction (a−b), multiplication (a\*b), division (a/b) and exponentiation (a^b), which has associativity on the right. From the point of view of priority, there is not immediately obvious behavior of the degree with respect to the unary minus: -2^2 = -4.
+##### 3.3.3 Binary addition (a + b), subtraction (a − b), multiplication (a \* b), division (a / b) and exponentiation (a ^ b), which has associativity on the right. From the point of view of priority, there is not immediately obvious behavior of the degree with respect to the unary minus: -2^2 = -4.
 
 #### 3.4 In addition to operations, formulas can contain function calls of the form " sin(5)" (a kind of unary operation). Brackets may or may not be present. The following functions are supported:
 
